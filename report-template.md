@@ -1,31 +1,18 @@
-# Module 12 Report Template
+# Module 12- Credit Risk Classification
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+This project is a linear regression model designed to determine creditworthiness of borrowers. It is designed to practice using different techniques in machine learning in order to obtain an ideal model. Two models are created and the goal is to determine the better model. The values we will be focusing on is healthy loans(0) and high risk loans(1).
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
+  * This model uses the original data and does fairly well with an accuracy of .94. It had a recall and precision score of 1.00, giving the impression of a good   
+    model. The main issue with this model is when it comes to high risk loans where it only has an accuracy of 0.87, which could be improved.
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * This model uses resampled data to train our model on. It has an accuracy, precision, and recall score of 1.00. The recall score of this model improved to one indicating that everyone that was expected to be high risk loan was labeled as such. The only issue is some that arent high risk loans were declared to be high risk.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+Neither model is perfect, but I would recommend Model 2 if I had to. It performs much better than Model 1 when it comes the the main goal, which is determining those who are high risk loans. The only real issue that could be improved on Model 2, is there are some people that are not high risk loans being declared as such.
